@@ -1,5 +1,5 @@
 # Single_cell_analysis_demo
-This is a simple demo for jointly modeling single cell ATAC-seq and RNA-seq datasets using Signac from Seurat package and MultiVI from scVI framework. Please note that It's for demonstrating working code/pipeline rather than for generating meaningful analysis.
+This is a simple demo for jointly modeling single cell ATAC-seq and RNA-seq datasets using Signac from Seurat package and MultiVI from scVI framework. Please note that It's for demonstrating working code/pipeline only.
 
 ## Sample dataset
 The sample dataset is downloaded from the NCBI GEO database (GSE151302). After decompression, the files are stored in a working folder. The demo codes just process one sample dataset (**GSM4572187**) for now.

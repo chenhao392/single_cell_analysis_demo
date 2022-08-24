@@ -37,3 +37,6 @@ process/
 ``multiVI_integration.ipynb``
 >This notebook takes in the mentioned 10x MTX folder/files, organizes them into a multiome anndata structure and trains a MultiVI model.
 
+### Joint modeling single cell ATAC-seq and RNA-seq using MultiVI and annotate cell type via scANVI
+``multiVI_integration_colab.ipynb``
+>This notebook is an extension of the multiVI integration analysis above, where the full RNA-seq and ACAC-seq datasets are integrated using google Colab GPU. And the cell types are annotated using scANVI, a semi-supervised variational inference method.

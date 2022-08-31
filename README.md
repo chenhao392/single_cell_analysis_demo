@@ -33,7 +33,7 @@ process/
 ``signac_and_dataFormat_manipulation_demo.R``
 
 >This R script takes in the peak count matrices in h5 format, infers gene activities via Signac and Seurat, and return 10x MTX format files with proper genome annotations for downstream analysis. Please note that the quality control(QC) steps are not included for simplicity, since the peaks are already filtered. More information for QC can be found in the Seurat official website/tutorials.
-### Joint modeling single cell ATAC-seq and RNA-seq using MultiVI
+### Joint modeling single cell using MultiVI(small scale)
 ``multiVI_integration.ipynb``
 >This notebook takes in the mentioned 10x MTX files, organizes them into a multiome anndata structure and trains a MultiVI model at a small scale.
 
@@ -41,6 +41,6 @@ process/
 ``multiVI_integration_colab.ipynb``
 >This notebook is an extension of the multiVI integration analysis above, where the full RNA-seq and ACAC-seq datasets are integrated using google Colab with GPU support. In addition, the cell types are annotated using scANVI's seed cell labeling protocol.
 
-### Joint modeling using GLUE and gene regulatory inference
+### Joint modeling using GLUE and gene regulatory network inference
 ``GLUE_multimodal_integration_and_scenic_GRN_inference.ipynb``
 >This notebook takes in the mentioned scATAC-seq and scRNA-seq datasets and motif information from Jasper database, builds an integrated embedding model and infers gene regulatory network using this model and scenic package.

@@ -44,3 +44,11 @@ process/
 ### Joint modeling using GLUE and gene regulatory network inference
 ``GLUE_multimodal_integration_and_scenic_GRN_inference.ipynb``
 >This notebook takes in the mentioned scATAC-seq and scRNA-seq datasets and motif information from Jasper database, builds an integrated embedding model and infers gene regulatory network using this model and scenic package.
+
+### surface protein abundance inference via transfer learning
+``cTPnet_surface_protein_abundance_inference.html``
+>This demo uses a pre-trained cTP-net transfer learning model to infer 24 surface proteins' abundance for an AML patient single-cell RNAseq dataset. It also clustered the cells and annotated the cell types using the inferred surface protein abundance. In the end, it calculates the average abundance of the 24 genes in two cell types.
+
+### scMS data processing and correlation with inferred protein abundance
+``sceptre_scMS_scTPnet_correlation.ipynb``
+>This demo uses a Scanpy compatible single-cell mass spectrometry data processing pipeline(Sceptre) for processing an AML patient dataset(with FACS sorted markers for cell types). In the end, it also calculates the correlations between the scMS measured protein abundance with the Protein/RNA abundances from the cTP-net model demo above.
